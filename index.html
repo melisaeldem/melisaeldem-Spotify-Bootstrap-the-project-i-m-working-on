@@ -9,10 +9,28 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Hello, world!</title>
 
     <style>
+        * {
+            font-family: 'Open Sans', sans-serif !important;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        body {
+            margin-top: -72px;
+        }
+        .gradient{
+            background: linear-gradient(#ed6670,#f2ad4e);
+        }
         .bg-yellow {
             background-color: #f7c04e !important;
         }
@@ -20,11 +38,31 @@
         .py-6 {
             padding: 150px 0px;
         }
+
+        .pt-6 {
+            padding-top: 200px;
+        }
+
+        .bg-soft-black {
+            background-color: #00000099;
+        }
+        .btn-success{
+            background-color: #1db954 !important;
+            border-radius: 50px;
+            padding: 8px 22px;
+            border: none;
+        }
+        .btn-outline-secondary{
+            border-radius: 50px;
+            color: white;
+            border: 1px solid white;
+
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark text-white navbar-expand-lg">
+    <nav class="navbar navbar-dark bg-soft-black text-white navbar-expand-lg sticky-top bold">
         <div class="container py-2">
             <a href="#" class="navbar-brand">Spotify</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-spotify"
@@ -44,10 +82,10 @@
         </div>
     </nav>
     <!-- Slider -->
-    <section class="bg-yellow py-6">
+    <section class="gradient pb-5 pt-6">
         <div class="container">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner text-center" style="height:300px">
+                <div class="carousel-inner text-white text-center" style="height:300px">
                     <div class="carousel-item active">
                         <h1 class="display-3">Herkes için müzik</h1>
                         <a href="#" class="btn btn-success">SPOTIFY'I ÜCRETSİZ OLARAK AL</a>
@@ -78,7 +116,7 @@
         </div>
     </section>
     <!--  -->
-    <section class="py-5">
+    <section class="py-5 ">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -116,7 +154,7 @@
         </div>
     </section>
     <!--  -->
-    <section class="bg-yellow py-5">
+    <section class="gradient py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 offset-md-1 d-sm-none d-md-block">
@@ -200,12 +238,110 @@
         </div>
     </section>
     <!--  -->
-    <section class="bg-yellow py-5">
-        bölüm 5
+    <section class="gradient py-5">
+        <div class="container">
+            <h1 class="text-center py-4 text-white">Müziğe Ulaş.</h1>
+            <div class="row">
+                <div class="col-md-4 offset-md-2">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Spotify Free</h5>
+                            <h3 style="margin-bottom: 72px;">0,00 TL / <small>ay</small></h3>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>Karışık çal</li>
+                                <li class="text-muted">Reklamsız</li>
+                                <li class="text-muted">Sınırsız Atlama Hakkı</li>
+                                <li class="text-muted">Çevrimdışı Dinle</li>
+                                <li class="text-muted">İstediğin Parçayı Çal</li>
+                                <li class="text-muted">Yüksek Kaliteli Ses</li>
+                            </ul>
+                            <hr>
+                            <a href="#" class="btn btn-success btn-block">ÜCRETSİZ EDİN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Spotify Premium</h5>
+                            <h3>13,99 TL / <small>ay</small></h3>
+                            <small>30 günlük ücretsiz denemeni başlat* Aile ve Öğrenci tekliflerimiz var</small>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>Karışık çal</li>
+                                <li>Reklamsız</li>
+                                <li>Sınırsız Atlama Hakkı</li>
+                                <li>Çevrimdışı Dinle</li>
+                                <li>İstediğin Parçayı Çal</li>
+                                <li>Yüksek Kaliteli Ses</li>
+                            </ul>
+                            <hr>
+                            <a href="#" class="btn btn-success btn-block">PREMIUM EDİN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <p class="text-center"><small>*Spotify ® 30 Günlük Ücretsiz Deneme Teklifi Şart ve Koşulları
+                            Gerçelidir.
+                            Premium veya Unlimited hizmete üye olan veya denemeden yararlanan kullanıcılar bu tekliften
+                            yararlanabilir.</small></p>
+                </div>
+
+            </div>
     </section>
     <!-- Footer -->
     <footer class="bg-dark py-5">
-        footer
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>Spotify</h3>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li class="text-muted mb-3"><small><b>ŞİRKET</b></small></li>
+                        <li class="">Hakkında</li>
+                        <li class="">İşler</li>
+                        <li class="">Basın</li>
+                        <li class="">Haberler</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li class="text-muted mb-3"><small><b>TOPLULUKLAR</b></small></li>
+                        <li class="">Sanatçılar İçin</li>
+                        <li class="">Geliştiriciler İçin</li>
+                        <li class="">Markalar</li>
+                        <li class="">Yatırımcılar</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li class="text-muted mb-3"><small><b>YARARLI BAĞLANTILAR</b></small></li>
+                        <li class="">Yardım</li>
+                        <li class="">Hediye</li>
+                        <li class="">Web Çalar</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-right">
+                    <i class="ri-facebook-line fa-2x mx-3"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-twitter-line fa-2x mx-3"></i>
+                </div>
+                <div class="clear-fix"></div>
+
+                <div class="clearfix"></div>
+
+                <ul class="list-inline mt-5 float-left">
+                    <li class="list-inline-item"><a href="#" class="text-white"><small>Yasal</small> </a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><small>Gizlilik</small></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><small>Cookies</small></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><small>Reklamlar Hakkında</small></a>
+                    </li>
+                </ul>
+                <p class="mt-4 ml-auto text-right"><small>Türkiye <br> 2018 Spotify AB</small></p>
+            </div>
+        </div>
     </footer>
 
 
